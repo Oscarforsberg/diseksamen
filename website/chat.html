@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chatter</title>
+    <link href="./chat.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8f27961d81.js" crossorigin="anonymous"></script>
+    <script src="./chat.js" defer></script>
+</head>
+
+<body>
+    <div class="container py-5 px-4">
+        <!-- For demo purpose-->
+        <header class="text-center">
+            <h1 class="display-4 text-white">Chatter</h1>
+            <p class="text-white lead mb-0">Chat with friends, family and others</p>
+            </p>
+        </header>
+
+        <div class="row rounded-lg overflow-hidden shadow">
+            <!-- Users box-->
+            <div class="col-5 px-0">
+                <div class="bg-white">
+
+                    <div class="bg-gray px-4 py-2 bg-light">
+                        <p class="h5 mb-0 py-1">Recent</p>
+                    </div>
+
+                    <div class="messages-box">
+                        <div id="chatroom-list" class="list-group rounded-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat Box-->
+            <div class="col-7 px-0">
+                <div id="chatroom-messages" class="px-4 py-5 chat-box bg-white">
+                </div>
+
+                <!-- Typing area -->
+                <div class="bg-light">
+                    <div class="input-group">
+                        <input type="text" placeholder="Type a message" id="message"
+                            class="form-control rounded-0 border-0 py-4 bg-light">
+                        <div class="input-group-append">
+                            <button id="send-message" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Logout -->
+        <div class="d-flex justify-content-center mt-2">
+            <a id="logout" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
